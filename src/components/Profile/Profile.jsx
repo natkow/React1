@@ -2,7 +2,6 @@
 import PropTypes from "prop-types";
 import "./Profile.css"
 
-
 function Profile({
   username,
   tag,
@@ -13,7 +12,7 @@ function Profile({
   return (
     <div className="profile">
       <div className="description">
-        <img src={avatar} alt={username} className="avatar" width="100" />
+        <img src={avatar} alt={username} className="avatar" width="80" />
         <p className="name">{username}</p>
         <p className="tag">@{tag}</p>
         <p className="location">{location}</p>
@@ -36,6 +35,7 @@ function Profile({
     </div>
   );
 }
+
 
 Profile.propTypes = {
   username: PropTypes.string.isRequired,
