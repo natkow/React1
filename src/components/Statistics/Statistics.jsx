@@ -17,6 +17,7 @@ function Statistics({ title, stats }) {
   );
 }
 
+
 Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.array,  
